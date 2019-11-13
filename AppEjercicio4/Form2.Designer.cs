@@ -94,6 +94,7 @@
             // 
             // txtresultado
             // 
+            this.txtresultado.Enabled = false;
             this.txtresultado.Location = new System.Drawing.Point(124, 104);
             this.txtresultado.Name = "txtresultado";
             this.txtresultado.Size = new System.Drawing.Size(100, 20);
@@ -101,7 +102,7 @@
             // 
             // btnSALIR
             // 
-            this.btnSALIR.Location = new System.Drawing.Point(263, 137);
+            this.btnSALIR.Location = new System.Drawing.Point(263, 125);
             this.btnSALIR.Name = "btnSALIR";
             this.btnSALIR.Size = new System.Drawing.Size(88, 25);
             this.btnSALIR.TabIndex = 7;
