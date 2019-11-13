@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtradio = new System.Windows.Forms.TextBox();
+            this.txtaltura = new System.Windows.Forms.TextBox();
+            this.txtarea = new System.Windows.Forms.TextBox();
+            this.txtvolumen = new System.Windows.Forms.TextBox();
+            this.btnCALCULAR = new System.Windows.Forms.Button();
+            this.btnNUEVO = new System.Windows.Forms.Button();
+            this.btnSALIR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 66);
+            this.label2.Location = new System.Drawing.Point(30, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 113);
+            this.label3.Location = new System.Drawing.Point(21, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 2;
@@ -88,75 +88,77 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "VOLUMEN";
             // 
-            // textBox1
+            // txtradio
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtradio.Location = new System.Drawing.Point(105, 106);
+            this.txtradio.Name = "txtradio";
+            this.txtradio.Size = new System.Drawing.Size(100, 20);
+            this.txtradio.TabIndex = 5;
             // 
-            // textBox2
+            // txtaltura
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtaltura.Location = new System.Drawing.Point(105, 59);
+            this.txtaltura.Name = "txtaltura";
+            this.txtaltura.Size = new System.Drawing.Size(100, 20);
+            this.txtaltura.TabIndex = 6;
             // 
-            // textBox3
+            // txtarea
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(241, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtarea.Enabled = false;
+            this.txtarea.Location = new System.Drawing.Point(241, 82);
+            this.txtarea.Name = "txtarea";
+            this.txtarea.Size = new System.Drawing.Size(100, 20);
+            this.txtarea.TabIndex = 7;
             // 
-            // textBox4
+            // txtvolumen
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(241, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtvolumen.Enabled = false;
+            this.txtvolumen.Location = new System.Drawing.Point(241, 129);
+            this.txtvolumen.Name = "txtvolumen";
+            this.txtvolumen.Size = new System.Drawing.Size(100, 20);
+            this.txtvolumen.TabIndex = 8;
             // 
-            // button1
+            // btnCALCULAR
             // 
-            this.button1.Location = new System.Drawing.Point(12, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 26);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "CALCULAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCALCULAR.Location = new System.Drawing.Point(12, 175);
+            this.btnCALCULAR.Name = "btnCALCULAR";
+            this.btnCALCULAR.Size = new System.Drawing.Size(90, 26);
+            this.btnCALCULAR.TabIndex = 9;
+            this.btnCALCULAR.Text = "CALCULAR";
+            this.btnCALCULAR.UseVisualStyleBackColor = true;
+            this.btnCALCULAR.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnNUEVO
             // 
-            this.button2.Location = new System.Drawing.Point(135, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 26);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "NUEVO";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNUEVO.Location = new System.Drawing.Point(135, 175);
+            this.btnNUEVO.Name = "btnNUEVO";
+            this.btnNUEVO.Size = new System.Drawing.Size(97, 26);
+            this.btnNUEVO.TabIndex = 10;
+            this.btnNUEVO.Text = "NUEVO";
+            this.btnNUEVO.UseVisualStyleBackColor = true;
+            this.btnNUEVO.Click += new System.EventHandler(this.btnNUEVO_Click);
             // 
-            // button3
+            // btnSALIR
             // 
-            this.button3.Location = new System.Drawing.Point(272, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 26);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "SALIR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSALIR.Location = new System.Drawing.Point(272, 175);
+            this.btnSALIR.Name = "btnSALIR";
+            this.btnSALIR.Size = new System.Drawing.Size(95, 26);
+            this.btnSALIR.TabIndex = 11;
+            this.btnSALIR.Text = "SALIR";
+            this.btnSALIR.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 222);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSALIR);
+            this.Controls.Add(this.btnNUEVO);
+            this.Controls.Add(this.btnCALCULAR);
+            this.Controls.Add(this.txtvolumen);
+            this.Controls.Add(this.txtarea);
+            this.Controls.Add(this.txtaltura);
+            this.Controls.Add(this.txtradio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -176,12 +178,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtradio;
+        private System.Windows.Forms.TextBox txtaltura;
+        private System.Windows.Forms.TextBox txtarea;
+        private System.Windows.Forms.TextBox txtvolumen;
+        private System.Windows.Forms.Button btnCALCULAR;
+        private System.Windows.Forms.Button btnNUEVO;
+        private System.Windows.Forms.Button btnSALIR;
     }
 }
