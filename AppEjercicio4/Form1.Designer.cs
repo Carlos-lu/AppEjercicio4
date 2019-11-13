@@ -40,7 +40,7 @@
             // 
             // btnCONVERTIR
             // 
-            this.btnCONVERTIR.Location = new System.Drawing.Point(26, 142);
+            this.btnCONVERTIR.Location = new System.Drawing.Point(12, 142);
             this.btnCONVERTIR.Name = "btnCONVERTIR";
             this.btnCONVERTIR.Size = new System.Drawing.Size(93, 23);
             this.btnCONVERTIR.TabIndex = 0;
