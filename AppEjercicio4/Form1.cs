@@ -16,5 +16,25 @@ namespace AppEjercicio4
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            float cel = float.Parse(this.txtCELCIUS.Text);
+            //FORMULA PARA CONVERTIR DE CELCIUS A FAHRENHEIT
+            float fah = (cel * 9 / 5) + 32;
+            this.txtFAHRENHEIT.Text = fah.ToString();
+        }
+
+        private void btnNUEVO_Click(object sender, EventArgs e)
+        {
+            this.txtCELCIUS.Text = "";
+            this.txtFAHRENHEIT.Text = "";
+
+        }
+
+        private void btnSALIR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
