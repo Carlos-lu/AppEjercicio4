@@ -101,7 +101,7 @@
             // 
             // btnSALIR
             // 
-            this.btnSALIR.Location = new System.Drawing.Point(264, 129);
+            this.btnSALIR.Location = new System.Drawing.Point(263, 137);
             this.btnSALIR.Name = "btnSALIR";
             this.btnSALIR.Size = new System.Drawing.Size(88, 25);
             this.btnSALIR.TabIndex = 7;
